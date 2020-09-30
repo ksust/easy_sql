@@ -1,0 +1,7 @@
+name: app_name
+
+mysql: # mysql config
+  url: mysql://root:password@127.0.0.1:3306/db # mysql server
+  encoding: utf-8
+  pool_size: 5 # pool size
+  echo: false # echo sql while executing
