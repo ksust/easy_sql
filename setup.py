@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='easy_sql',
-    version='0.0.2',
+    version='0.0.4',
     description=
     'easy to use mysql(kb)',
     long_description=open('README.rst', encoding='utf-8').read(),

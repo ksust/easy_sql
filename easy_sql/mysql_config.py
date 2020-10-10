@@ -23,8 +23,8 @@ class EasyMySQLConfig:
         with open(yml_path, encoding='UTF-8') as f:
             data = f.read()
             conf = yaml.load(data, Loader=yaml.FullLoader)
-            self.url = conf['mysql']['url']
-            self.encoding = conf['mysql']['encoding']
-            self.pool_size = conf['mysql']['pool_size']
-            self.echo = conf['mysql']['echo']
+            self.url = conf['mysql'].get('url')
+            self.encoding = conf['mysql'].get('encoding')
+            self.pool_size = conf['mysql'].get('pool_size')
+            self.echo = conf['mysql'].get('echo')
             self.logger.info('EasyMySQLLog: yml parse done')

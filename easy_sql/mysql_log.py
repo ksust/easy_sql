@@ -14,7 +14,7 @@ class EasyMySQLLog:
         if EasyMySQLLog.__logger is None:
             with EasyMySQLLog.__instance_lock:
                 if EasyMySQLLog.__logger is None:
-                    logger = logging.getLogger('easy_sql')
+                    logger = logging.getLogger('easy_sql_log')
                     logger.setLevel(logging.INFO)
                     # handler, stdout
                     ch = logging.StreamHandler()
